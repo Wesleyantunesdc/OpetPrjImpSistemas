@@ -1,0 +1,38 @@
+<div class="tela">
+    <div class="login">
+        <form #formConectar="ngForm">
+            <div class="form-group">
+                <h1>login</h1>
+                <ul>
+                    <li>
+                        <h2>Usuario:</h2>
+                        <input 
+                            type="text" 
+                            placeholder="Digite o seu username.."
+                            id="username"
+                            name="username"
+                            [(ngModel)]="usuario.username"
+                            required>
+                    </li>
+                    <li>
+                        <h2>Senha:</h2>
+                        <input 
+                            type="text" 
+                            placeholder="Digite a sua senha.."
+                            id="senha"
+                            name="senha"
+                            [(ngModel)]="usuario.senha"
+                            required>
+                    </li>
+                </ul>
+                <div>
+                    <input 
+                        type="submit"
+                        class="btn"
+                        (click)="realizarLogin()"
+                        value="Conectar-se">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0; 
+    padding: 0;
+}
+app-root{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color:lightgray;
+    background-image: url('app/recursos/imagens/logo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
+}
