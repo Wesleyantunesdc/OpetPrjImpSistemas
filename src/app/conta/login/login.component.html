@@ -2,7 +2,7 @@
     <div class="login">
         <form #formConectar="ngForm">
             <div class="form-group">
-                <h1>login</h1>
+                <h1>LOGIN</h1>
                 <ul>
                     <li>
                         <h2>Usuario:</h2>
@@ -25,11 +25,16 @@
                             required>
                     </li>
                 </ul>
-                <input 
-                    type="submit"
+                <input
                     class="btn"
                     (click)="realizarLogin()"
                     value="Conectar-se">
+                <div class="botao_login_cadastro">
+                    <p>Ainda não possui conta, Clique ao lado!</p>
+                    <button>
+                        Cadastrar-se
+                    </button>
+                </div>
             </div>
         </form>
     </div>

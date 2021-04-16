@@ -8,7 +8,6 @@ app-root{
     height: 100%;
 }
 body{
-    background-color:lightgray;
     background-image: url('app/recursos/imagens/logo.png');
     background-repeat: no-repeat;
     background-position: 50% 0%;
