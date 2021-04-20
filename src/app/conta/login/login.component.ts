@@ -37,5 +37,9 @@ export class LoginComponent implements OnInit {
       window.alert("Preencha os campos corretamente!");
     }
   }
+
+  abrirTelaLogin(): void{
+    this.router.navigate(['/conta/cadastro']);
+  }
   
 }

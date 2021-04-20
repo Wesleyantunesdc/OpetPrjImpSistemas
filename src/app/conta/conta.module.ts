@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {UsuarioService}  from './shared';
 import { LoginComponent } from './login'
-import {FormsModule, ReactiveFormsModule } from '@angular/forms'
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CadastroComponent } from './cadastro';
 
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [LoginComponent, CadastroComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
