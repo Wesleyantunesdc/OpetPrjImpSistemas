@@ -1,3 +1,8 @@
+@import url('https://fonts.google.com/specimen/Oswald#standard-styles');
+*{
+    font-family: 'Oswald',
+}
+
 section{
     display: flex;
     width: 100vw;
@@ -5,43 +10,37 @@ section{
     padding: 0;
     margin: 0;
 }
-.box-esquerda{
+.box-direita{
     background-color: #3fcfab;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 80%;
-    width: 55vw;
+    width: 60vw;
     height: 100%;
     color: white;
     font-size: 18pt;
 }
-.box-direita{
-    width: 45vw;
+.box-esquerda{
+    width: 40vw;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
-.box-interna-esquerda{
+.box-interna-direita{
     width: 70%; 
-    margin-top: 40%;
+    height: 20%;
+    margin-top: 30%;
     margin-left: 15%;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.box-interna-esquerda p{
+.box-interna-direita p{
     color: rgb(240, 239, 239);
     font-size: 14pt;
     text-align: center;
 }
 
-.box-interna-esquerda button{
+.box-interna-direita button{
     padding: 10px;
     width: 30%;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.007);
+    background-color: rgba(255, 255, 255, 0);
     border: 1px solid white;
     color: white;
     margin-top: 25px;
@@ -49,45 +48,42 @@ section{
 }
 
 
-.box-interna-direita{
-    /* background-color: rgba(236, 235, 235, 0.295); */
-    border: solid 1px  #3cb99a;
-    border-radius: 6px;
-    height: 50vh;
-    width: 60%;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.082);
+.box-interna-esquerda{
+    width: 70%;
+    margin-left: 15%;
+    height: 40%;
+    margin-top: 35%;
 }
-.box-interna-direita h1{
+.box-interna-esquerda h1{
     color: #3cb99a;
     font-size: 32pt;
     text-align: center;
 }
 
-.box-interna-direita input{
+.box-interna-esquerda input{
     width: 80%;
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
+    margin-left: 12px;
     font-size: 12pt;
-    margin-left: 5%;
     border: 1px solid gray;
 }
 
-.box-interna-direita button{
+.box-interna-esquerda button{
     padding: 10px 10px;
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
     background-color: #3fcfab;
     border: 1px solid #ffffff;
     font-size: 16pt;
     color: #fff;
-    margin-top: 20px;
-    margin-left: 25%;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-left: 18%;
 }
 
 
-.box-interna-direita button:hover, .box-interna-esquerda button:hover{
+.box-interna-esquerda button:hover, .box-interna-direita button:hover{
     background-color: rgb(155, 154, 154);
     border: none;
     cursor: pointer;
