@@ -1,40 +1,19 @@
-<div class="tela">
-    <div class="login">
-        <form #formConectar="ngForm">
-            <div class="form-group">
-                <h1>LOGIN</h1>
-                <ul>
-                    <li>
-                        <h2>Usuario:</h2>
-                        <input 
-                            type="text" 
-                            placeholder="Digite o seu username.."
-                            id="username"
-                            name="username"
-                            [(ngModel)]="usuario.username"
-                            required>
-                    </li>
-                    <li>
-                        <h2>Senha:</h2>
-                        <input 
-                            type="text" 
-                            placeholder="Digite a sua senha.."
-                            id="senha"
-                            name="senha"
-                            [(ngModel)]="usuario.senha"
-                            required>
-                    </li>
-                </ul>
-                <input
-                    class="btn"
-                    (click)="realizarLogin()"
-                    value="Conectar-se">
-                <div class="botao_login_cadastro">
-                    <p>Ainda não possui conta, Clique ao lado!</p>
-                    <button (click)="abrirTelaLogin()" >Cadastrar-se
-                    </button>
-                </div>
-            </div>
-        </form>
+<section>
+    <div class="box-esquerda">
+        <div  class="box-interna-esquerda">
+            <h1 style="text-align: center;">Seja bem vindo!</h1>
+            <p>Se você não possui conta, clique no botão a baixo para cadastrar-se.</p>
+            <button  (click)="abrirTelaLogin()">Cadastrar-se</button>
+        </div>
     </div>
-</div>
+    <div class="box-direita">
+        <div class="box-interna-direita">
+            <h1>Login</h1>
+            <input type="text" placeholder="Usuário">
+            <input type="text" placeholder="Senha">
+            <button>
+                Entrar
+            </button>
+        </div>
+    </div>
+</section>

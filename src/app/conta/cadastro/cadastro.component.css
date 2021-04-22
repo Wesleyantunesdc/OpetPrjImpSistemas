@@ -10,13 +10,13 @@ section{
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80%;
-    width: 40vw;
+    width: 60vw;
     height: 100%;
     color: white;
     font-size: 18pt;
 }
 .box-direita{
-    width: 60vw;
+    width: 40vw;
     height: 100%;
 }
 
@@ -69,7 +69,7 @@ section{
 }
 
 .box-interna-direita button{
-    padding:  10px 10px;
+    padding: 10px 10px;
     width: 50%;
     border-radius: 10px;
     background-color: #3fcfab;
