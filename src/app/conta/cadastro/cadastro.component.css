@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@100;300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 section{
     display: flex;
     width: 100vw;
@@ -10,7 +15,7 @@ section{
     display: flex;
 	flex-direction: column;
 	justify-content: center;
-    background-color: #3fcfab;
+    background-image: linear-gradient(to right,#76CAD4,#57BB90);
     width: 55vw;
     height: 100%;
     color: white;
@@ -64,12 +69,17 @@ section{
 
 .box-interna-direita input{
     width: 100%;
-    height: 40px;
-    border-radius: 10px;
+    height: 50px;
+    border-radius: 5px;
     margin-top: 20px;
-    font-size: 12pt;
+    font-size: 16pt;
     border: 1px solid gray;
 }
+
+.box-interna-direita input:hover{
+    border: 2px solid #3cb99a;
+}
+
 
 .box-interna-direita button{
     padding: 10px 10px;

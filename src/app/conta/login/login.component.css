@@ -1,6 +1,6 @@
-@import url('https://fonts.google.com/specimen/Oswald#standard-styles');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@100;300&display=swap');
 *{
-    font-family: 'Oswald',
+    font-family: 'Roboto', sans-serif;
 }
 
 section{
@@ -14,7 +14,7 @@ section{
     display: flex;
 	flex-direction: column;
 	justify-content: center;
-    background-color: #3fcfab;
+    background-image: linear-gradient(to right,#76CAD4,#57BB90);
     width: 55vw;
     height: 100%;
     color: white;
@@ -71,8 +71,12 @@ section{
     border-radius: 5px;
     margin-top: 20px;
     margin-left: 10%;
-    font-size: 12pt;
+    font-size: 16pt;
     border: 1px solid gray;
+}
+
+.box-interna-esquerda input:hover{
+    border: 2px solid #3cb99a;
 }
 
 .box-interna-esquerda button{
