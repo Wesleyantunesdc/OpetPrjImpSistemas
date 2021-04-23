@@ -11,21 +11,26 @@ section{
     margin: 0;
 }
 .box-direita{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
     background-color: #3fcfab;
-    width: 60vw;
+    width: 55vw;
     height: 100%;
     color: white;
     font-size: 18pt;
 }
 .box-esquerda{
-    width: 40vw;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    width: 45vw;
     height: 100%;
 }
 
 .box-interna-direita{
     width: 70%; 
     height: 20%;
-    margin-top: 30%;
     margin-left: 15%;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -51,8 +56,8 @@ section{
 .box-interna-esquerda{
     width: 70%;
     margin-left: 15%;
-    height: 40%;
-    margin-top: 35%;
+    height: auto;
+    justify-content: center;
 }
 .box-interna-esquerda h1{
     color: #3cb99a;
@@ -62,24 +67,24 @@ section{
 
 .box-interna-esquerda input{
     width: 80%;
-    padding: 20px;
+    height: 50px;
     border-radius: 5px;
     margin-top: 20px;
-    margin-left: 12px;
+    margin-left: 10%;
     font-size: 12pt;
     border: 1px solid gray;
 }
 
 .box-interna-esquerda button{
-    padding: 10px 10px;
+    padding: 10px 0px;
     width: 60%;
     border-radius: 10px;
     background-color: #3fcfab;
     border: 1px solid #ffffff;
     font-size: 16pt;
+    margin-left: 20%;
     color: #fff;
     margin-top: 25px;
-    margin-left: 18%;
 }
 
 
