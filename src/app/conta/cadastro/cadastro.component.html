@@ -10,8 +10,12 @@
         <div class="box-interna-direita" *ngIf="usuario">
             <h1>Cadastre-se aqui</h1>
             <input type="text" [(ngModel)]="usuario.nome" placeholder="Nome Completo">
+            <input type="text" [(ngModel)]="usuario.senha" placeholder="Senha">
             <input type="text" [(ngModel)]="usuario.dataNascimento" placeholder="Data Nascimento">
-            <input type="text" [(ngModel)]="usuario.curso" placeholder="Curso">
+
+            <select name="cursos" id="cursos" [(ngModel)]="cs">
+                <option *ngFor ="let c of cursos" value={{c.nomeCurso}}>{{c.nomeCurso}}</option>
+              </select>
             <input type="text" [(ngModel)]="usuario.periodo" placeholder="Período">
             <button (click)="cadastrar()">
                 Cadastrar-se

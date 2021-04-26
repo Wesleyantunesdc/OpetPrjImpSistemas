@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Curso } from '../modelos/curso';
 import { Usuario } from '../modelos/usuario';
 
@@ -14,20 +15,14 @@ export class ContaService {
     this.apiURL = 'https://opet-prj-imp-sistemas-backend.herokuapp.com'
    }
 
-  public cadastrarUsuario(usuario: Usuario): Usuario{
+  public cadastrarUsuario(usuario: Usuario): Observable<Usuario>{
     console.log(usuario)
-    return usuario;
+      return this.http.post<Usuario>(`${this.apiURL}/usuarios`,usuario);
   }
 
-  public listarCursos():void{
-    this.http.get(`${this.apiURL}/cursos`)
-      .subscribe(
-        resultado => {
-          console.log(resultado)
-        },
-        erro => {
-          console.log("Erro ao recuperar cursos")
-        }
-      )
+  public listarCursos(){
+    return this.http.get<Array<any>>(`${this.apiURL}/cursos`)
   }
+
+
 }
