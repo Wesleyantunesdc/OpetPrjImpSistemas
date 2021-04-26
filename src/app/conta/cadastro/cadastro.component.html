@@ -1,22 +1,21 @@
 <section>
     <div class="box-esquerda">
-        <div  class="box-interna-esquerda">
+        <div class="box-interna-esquerda">
             <h1 style="text-align: center;">Seja bem vindo!</h1>
             <p>Se você ja possui conta, clique no botão a baixo para conectar-se.</p>
-            <button  (click)="abrirTelaLogin()">Efetuar Login</button>
+            <button (click)="abrirTelaLogin()">Efetuar Login</button>
         </div>
     </div>
     <div class="box-direita">
-        <div class="box-interna-direita">
+        <div class="box-interna-direita" *ngIf="usuario">
             <h1>Cadastre-se aqui</h1>
-            <input type="text" placeholder="Nome Completo">
-            <input type="text" placeholder="Data Nascimento">
-            <input type="text" placeholder="Curso">
-            <input type="text" placeholder="Período">
-            <button>
+            <input type="text" [(ngModel)]="usuario.nome" placeholder="Nome Completo">
+            <input type="text" [(ngModel)]="usuario.dataNascimento" placeholder="Data Nascimento">
+            <input type="text" [(ngModel)]="usuario.curso" placeholder="Curso">
+            <input type="text" [(ngModel)]="usuario.periodo" placeholder="Período">
+            <button (click)="cadastrar()">
                 Cadastrar-se
             </button>
         </div>
     </div>
 </section>
-
